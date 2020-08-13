@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="nav-bar.css">
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>Amazon</title>
 </head>
 <body>
@@ -216,22 +217,60 @@
                 </div>
 
                 <!-- price -->
-                <div class="info-side__container__price">
-                    <div class="info-side__cost-info">
-                        <p>$283.55 </p>
-                        <p>+ $92.43 Shipping & Import Fees Deposit to Israel <a href="#">Details </a> </p>
-                        <p>Arrives: Aug 27 - Sep 3 </p>
-                    </div>
-                    <div class="info-side__stock">
-                        <p>In Stock. </p>
-                        <button class="info-side_qty">Qty: 15 <i class="fas fa-angle-down"></i></button>
-                    </div>
-                    <div class="btn info-side__buy-btn">
-       
-                        <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn buy-now">Buy Now</button>
-                    </div>
-                </div>
+                <section class="info-side__container__price">
+                    <aside class="info-side__cost">
+                        <div class="info-side__cost-info">
+                            <p>$283.55 </p>
+                            <p>+ $92.43 Shipping & Import Fees Deposit to Israel <a href="#">Details </a> </p>
+                            <p>Arrives: Aug 27 - Sep 3 </p>
+                        </div>
+                        <div class="info-side__stock">
+                            <p>In Stock. </p>
+                            <button class="info-side_qty">Qty: 15 <i class="fas fa-angle-down"></i></button>
+                        </div>
+                        <div class="info-side__buy-btn">
+        
+                            <button class="btn add-to-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <p>Add to Cart</p> 
+                            </button>
+                            <button class="btn buy-now">
+                                <i class="fas fa-play"></i>
+                                <p>Buy Now</p> 
+                            </button>
+                        </div>
+                        <div class="">
+                            <i class="fas fa-lock"></i>
+                            <a href="#">Secure transaction</a>
+                            <p>Ships from and sold by Amazon.com. </p>
+                        </div>
+                        <div class="info-side__other-item">
+                            <input type="checkbox"> <a href="#">PowerColor Radeon RX 5600 XT 6GB GDDR6 14GBPS</a>
+                            <p class="mark">$279.99</p>
+                        </div>
+                        <div class="info-side__gift">
+                            <input type="checkbox"> <p>Add gift options</p>
+                        </div>
+                        <div class="info-side__deliver">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Deliver to Israel</p>
+                        </div>
+                        <button>Add to list</button>
+                    </aside>
+                    <aside class="info-side__more-options">
+                        <div class="info-side__new">
+                            <p>New (16) from $283.55</p>
+                        </div>
+
+                        <div class="info-side">
+                            <p>Share</p>
+                            <i class="far fa-envelope"></i>
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-pinterest"></i>
+                        </div>
+                    </aside>
+                </section>
             </article>
         </section>
     </main>

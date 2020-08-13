@@ -178,10 +178,33 @@ i{
 }
 
 .btn{
-    font-size: 1.4rem;
+    font-size: 1rem;
+    border: none;
+    padding: 2px;
+    border: 1px solid rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    width: 200px;
 }
 
 .buy-now{
     background: linear-gradient(to bottom,var(--buy-now-btn-one), var(--buy-now-btn-two));
-    padding: 7px;
+
 }
+
+.add-to-cart{
+    background-color: RGB(242, 200, 96);
+}
+
+.btn i{
+    background-color: var(--second-nav-bg);
+    color: #fff;
+    padding: 6px;
+    border-radius: 2px;
+}
+
+.btn p{
+    margin: 0 auto;
+}
+

@@ -1,5 +1,6 @@
 .main-site{
-    padding: 10px;
+    padding-top: 10px;
+    margin:  0 10vw;
     line-height: 1.5;
 }
 
@@ -188,3 +189,14 @@
     flex-direction: column;
 }
 
+
+.info-side__gift,.info-side__deliver{
+    border-bottom: 1px solid var(--grey-border);
+}
+
+
+.info-side__cost,.info-side__new{
+    padding: 15px;
+    border-radius: 3px;
+    border: 1px solid var(--grey-border);
+}
