@@ -56,13 +56,13 @@
 }
 
 .search .search__option-btn{
+    border: 2px solid rgba(0,0,0,0);
     margin: auto 0;
     height: 100%;
     padding: 5px;
     border: none;
     cursor: pointer;
     flex-shrink: 0;
-    border: 0.1 gray 1px;
     border-radius: 5px 0 0 5px;
     font-size: 1.3rem;
     background: var(--search-category);
@@ -219,4 +219,46 @@
 .limited-shopping, .nav-3 a{
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+
+/* drop menu category*/
+.drop-menu{
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    padding: 10px;
+    background-color: white;
+    overflow-y: scroll;
+    z-index: 2;
+    display: block;
+    visibility: hidden;
+}
+
+.search__option-btn:active{
+    border: 2px solid orange;
+}
+
+.search__option-btn:active .drop-menu{
+    visibility: visible;
+}
+
+.drop-menu li{
+    display: block;
+    text-align: left;
+}
+
+.drop-menu li:hover{
+    background: var(--blue);
+    
+}
+
+.drop-menu li a{
+    line-height: 2;
+    text-decoration: none;
+    color: black ;
+}
+
+.drop-menu li:hover a{
+    color: white;
 }
