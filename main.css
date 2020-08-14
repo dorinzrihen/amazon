@@ -222,3 +222,30 @@
     display: flex;
 }
 
+
+
+/* carrousel */
+
+.inspired-by{
+    display: flex;
+    flex-direction: column;
+}
+
+.carrousel-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.carrousel__img-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.carrousel__img-container > div{
+        margin: 10px;
+}
+
+
+.carrousel__img-container img{
+    width: 90%;
+}
