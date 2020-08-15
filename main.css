@@ -239,6 +239,7 @@
     border-bottom: 1px solid var(--grey-border);
 }
 
+
 .info_side-other-seller{
     border-top: 1px solid var(--grey-border);
     border-left: 1px solid var(--grey-border);
@@ -258,14 +259,88 @@
     text-align: left;
 }
 
+
+
 .info_side-other-seller >p{
     text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.info_side-other-seller > div{
+    padding: 10px;
+    display: grid;
+    grid-template-columns:5fr 2fr;
+}
+
+.info_side-other-seller > div:hover .seller{
+    color: orange;
+}
+
+
+.info_side-other-seller > div button{
+    height: 25px;
+    text-align: center;
+    font-size: 1.2rem;
+    justify-content: center;
+
+}
+
+.info_side-other-seller > div p{
+    font-size: 1.2rem;
+}
+
+.info-side__sponsored{
+    border: 1px solid var(--grey-border);
+    margin-top: 15px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+}
+
+/* sponsored */
+.info-side__sponsored img{
+    object-fit: contain;
+    height: 100px;
+    justify-self: center;
+}
+
+.info-side__sponsored__rate{
+    display: flex;
+    align-items: center;
+}
+
+.info-side__sponsored__rate > p:last-child{
+    color: grey;
+    vertical-align: middle;
+
+}
+
+.info-side__sponsored__price > span{
+    vertical-align: super;
+    font-size: 0.9rem;
+}
+
+.info-side__sponsored i{
+    color: orange;
+    font-size: 0.7rem;
+    margin-left: 4px;
+}
+
+.info-side__sponsored > div:last-child{
+    display: flex;
 }
 
 
 /* Frequently bought together */
 
-
+.buy-together h2,
+.inspired-by h2{
+    color: orangered;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
 
 .buy-together__product img{
     width: 100px;
@@ -275,9 +350,41 @@
 
 .buy-together .buy-together__product{
     display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.buy-together .buy-together__product> p{
+    font-size: 3rem;
+}
+
+.buy-together .buy-together__product > div:last-child{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-together .buy-together__product > div:last-child p,
+.buy-together .buy-together__product > div:last-child button{
+    margin-bottom: 7px;
+}
+
+.buy-together--btn{
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    padding: 3px 0;
+}
+
+.buy-together__info > div{
+    display: flex;
+    margin-bottom: 5px;
 }
 
 
+.buy-together__info > div input{
+    margin-right: 5px;
+}
 
 /* carrousel */
 
@@ -286,21 +393,42 @@
     flex-direction: column;
 }
 
+
+
 .carrousel-container{
     display: flex;
     flex-direction: row;
 }
 
+.inspired-by button{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    align-self: center;
+}
+
 .carrousel__img-container{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .carrousel__img-container > div{
-        margin: 10px;
+    display: grid;
+    grid-template-rows: 3fr 1fr 0.2fr 0.2fr;
 }
 
 
 .carrousel__img-container img{
-    width: 90%;
+    object-fit: contain;
+    width: 100%;
+    height: 150px;
+}
+
+.carrousel__img-container > div > div{
+    display: flex;
+    align-items: center;
+}
+
+.carrousel__img-container > div > div a{
+    margin-left: 5px;
 }

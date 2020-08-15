@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6{
 } 
 
 p,i,li,a{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 li{
@@ -245,9 +245,7 @@ button{
 }
 
 
-.seller:hover{
-    color: orange;
-}
+
 
 .star-rate{
     flex-shrink: 0;
@@ -281,9 +279,6 @@ button{
     border-radius: 3px;
 }
 
-/* sponsored */
-.info-side__sponsored img{
-    width: 20%;
-}
+
 
 
