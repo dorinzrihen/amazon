@@ -43,6 +43,7 @@
 }
 
 .search{
+    position: relative;
     width: 100%;
     height: 30px;
     display: flex;
@@ -95,6 +96,7 @@
 }
 
 .language-option{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,6 +114,7 @@
 }
 
 .account, .returns{
+    position: relative;
     text-align: center;
     min-width: 110px;
     display: flex;
@@ -225,21 +228,103 @@
 /* drop menu category*/
 .drop-menu{
     position: absolute;
-    width: 200px;
-    height: 500px;
-    padding: 10px;
     background-color: white;
-    overflow-y: scroll;
     z-index: 2;
     display: block;
     visibility: hidden;
+    display: inline-block;
 }
 
+.drop-menu__category{
+    top: 35px;
+    left: -10%;
+    width: 200px;
+    height: 500px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+
+/* menu__language */
+.drop-menu__language , .drop-menu__sigh-in{
+    position: absolute;
+    padding: 10px;
+    border-radius: 2px;
+    line-height: 1.5;
+}
+
+.drop-menu__language {
+    top: 40px;
+    left: 0px;
+    width: 250px;
+}
+
+.drop-menu__language p,
+.drop-menu__language a,
+.drop-menu__language li,
+.drop-menu__sigh-in p,
+.drop-menu__sigh-in a{
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.drop-menu__language .bottom-border{
+    border-bottom: 0.5px solid var(--grey-border);
+    padding: 5px 0;
+}
+
+
+.drop-menu__language a{
+    text-decoration: none;
+}
+.drop-menu__language a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+
+.drop-menu__language::after,
+.drop-menu__sigh-in::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index:2;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(255, 255, 255);  
+}
+
+.drop-menu__language::after{
+    top: -9px;
+    left: 2px;
+}
+ 
+.drop-menu__language__change-currency > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop-menu__language__current-shop{
+    display: flex;
+}
+
+.drop-menu__language__current-shop img{
+    width: 10%;
+}
+
+.drop-menu__language li:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+
+/*   ~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 .search__option-btn:active{
     border: 2px solid orange;
 }
 
-.search__option-btn:active .drop-menu{
+.search__option-btn:active .drop-menu,.language-option:hover .drop-menu,
+.account:hover .drop-menu{
     visibility: visible;
 }
 
@@ -248,17 +333,75 @@
     text-align: left;
 }
 
-.drop-menu li:hover{
+.drop-menu__category li:hover{
     background: var(--blue);
     
 }
 
-.drop-menu li a{
+.drop-menu__category li a{
     line-height: 2;
     text-decoration: none;
     color: black ;
 }
 
-.drop-menu li:hover a{
+.drop-menu__category li:hover a{
     color: white;
+}
+
+
+
+/* sign in */
+.drop-menu__sigh-in{
+    width: 400px;
+    top: 40px;
+    left: -100%;
+    display: flex;
+   flex-direction: column;
+   align-content: center;
+   justify-content: center;
+}
+
+
+.drop-menu__sigh-in__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 20px;
+    border-top: 1px solid var(--grey-border);
+}
+
+.drop-menu__sigh-in::after{
+    top: -9px;
+    left: 40%;
+}
+
+.drop-menu__sigh-in__container a{
+    text-decoration: none;
+    color: black;
+}
+
+.drop-menu__sigh-in__container a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+
+
+.drop-menu__sigh-in > div:first-child{
+    height: 50px;
+}
+
+.drop-menu__sigh-in > div:first-child button{
+    padding:10px 70px;
+    top: 10px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.drop-menu__sigh-in > div:first-child p{
+    text-align: center;
+    padding-top: 40px;
 }

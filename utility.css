@@ -26,9 +26,10 @@
     --blue:#2369ac;
     --drak-color: #333;
     --light-grey-color:rgb(98, 98, 98);
+    --green: rgb(0, 80, 13);
 
     /* border-color */
-    --grey-border: #b4b4b4;
+    --grey-border: #c7c7c7;
 
 }
 
@@ -56,12 +57,20 @@ h1,h2,h3,h4,h5,h6{
     font-weight: normal;
 } 
 
+p,i,li,a{
+    font-size: 1.4rem;
+}
+
 li{
     display: inline;
 }
 
 i{
     color:var(--nav-second-color) ;
+}
+
+button{
+    cursor: pointer;
 }
 
 .box-container{
@@ -169,7 +178,12 @@ i{
 
 .mark{
     color: var(--red);
-    font-size: 1.2em;
+    font-size: 1.6rem;
+}
+
+.green{
+    color: var(--green);
+    font-size: 1.6rem;
 }
 
 .bold{
@@ -187,6 +201,18 @@ i{
     border-radius: 3px;
 }
 
+/* icons- color */
+.icon-red{
+    color: red;
+}
+
+.icon-light-blue{
+    color: rgb(67, 178, 216);
+}
+
+.icon-blue{
+    color: rgb(1, 1, 155);
+}
 
 
 .buy-now{
@@ -247,7 +273,17 @@ i{
     color: var(--buy-now-btn-two);
 }
 
+.grey-btn{
+    border: 1px solid black;
+    padding: 3px 7px;
+    background: linear-gradient(to bottom, rgb(250, 250, 250),rgb(218, 218, 218));
+    font-size: 1.3rem;
+    border-radius: 3px;
+}
+
 /* sponsored */
 .info-side__sponsored img{
     width: 20%;
 }
+
+

@@ -1,6 +1,6 @@
 .main-site{
     padding-top: 10px;
-    margin:  0 10vw;
+    margin:  0 8vw;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,6 @@
 
 .main-site .category-location a,.main-site .category-location li{
     color: var(--light-grey-color);
-    font-size: 1.3rem;
 }
 
 
@@ -52,10 +51,6 @@
 .main-site a{
     text-decoration: none;
     color: var(--blue);
-}
-
-.main-site a, .main-site p{
-    font-size: 1.5rem;
 }
 
 
@@ -126,7 +121,6 @@
 }
 
 .more-info ul li{
-    font-size: 1.4rem;
     display: list-item;
 
 }
@@ -172,7 +166,22 @@
 }
 
 
-/*  buy - right place*/
+/*  buy - right*/
+
+.info-side__cost{
+    margin-bottom: 15px;
+}
+
+.info-side__cost a:hover{
+    color: orange;
+}
+
+.info-side__cost .info-side__gift{
+    display: flex;
+}
+.info-side__buy-btn button:first-child{
+    margin-bottom: 5px;
+}
 
 .info-side__container__price{
     display: flex;
@@ -185,6 +194,22 @@
 }
 
 
+/* right aside - share */
+.info-side__share{
+    margin: 10px 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.info-side__share i{
+    margin: 0 5px;
+}
+
+.info-side__share a:hover{
+    text-decoration: underline;
+}
+
 .info-side__gift,.info-side__deliver{
     border-bottom: 1px solid var(--grey-border);
 }
@@ -194,6 +219,18 @@
     padding: 15px;
     border-radius: 3px;
     border: 1px solid var(--grey-border);
+}
+
+.info-side__cost > div{
+    margin: 10px 0;
+}
+
+.info-side__stock{
+    padding: 15px 0;
+}
+
+.info-side__stock .info-side--btn{
+    margin-top: 5px;
 }
 
     
@@ -207,6 +244,24 @@
     border-left: 1px solid var(--grey-border);
     border-right: 1px solid var(--grey-border);
 }
+
+.info-side__deliver{
+    display: flex;
+}
+
+.info-side__deliver i{
+    margin-right: 2px;
+}
+
+.info-side__cost > button:last-child{
+    width: 100%;
+    text-align: left;
+}
+
+.info_side-other-seller >p{
+    text-align: center;
+}
+
 
 /* Frequently bought together */
 

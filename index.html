@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="nav-bar.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>Amazon.com:AMD Ryzen 7 3700X</title>
@@ -28,7 +30,7 @@
             <div class="search">
                 <button class="search__option-btn">
                     Electronics <i class="fas fa-caret-down"></i>   
-                    <div class="drop-menu">
+                    <div class="drop-menu drop-menu__category">
                         <ul>
                             <li><a href="#">All Department</a></li>
                             <li><a href="#">Art & Craft</a></li>
@@ -59,7 +61,35 @@
             
             <div class="box-container">
                 <button class="language-option">
-                    <div class="language-option__img"></div>
+                    <div class="language-option__img">
+                        <div class="drop-menu drop-menu__language">
+                            <p>Change Language <a href="#">Learn more</a> </p> 
+                            <ul class="drop-menu__language__current-pick bottom-border">
+                                <li><input type="radio" checked="checked" name="radio"> English - EN</li>
+                            </ul>
+                            <ul class="drop-menu__language__other-option bottom-border">
+                                <li><input type="radio" name="radio"> Español - ES</li>
+                                <li><input type="radio" name="radio"> 简体中文 - ZH</li>
+                                <li><input type="radio" name="radio"> Deutsch - DE</li>
+                                <li><input type="radio" name="radio"> Português - PT</li>
+                                <li><input type="radio" name="radio">繁體中文 - ZH</li>
+                                <li><input type="radio" name="radio"> 한국어 - KO</li>
+                                <li><input type="radio" name="radio"> עברית - HE</li>
+                            </ul>
+                            <div class="bottom-border drop-menu__language__change-currency">
+                                <p>Change currency <a href="#">Learn More</a></p>
+                                <div>
+                                    <p>$ - USD - U.S Dollar</p>
+                                    <a href="#">Change</a>
+                                </div>
+                            </div>
+                            <div class="drop-menu__language__current-shop">
+                                <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/US-United-States-Flag-icon.png" alt="">
+                                <p>You are shopping on Amazon.com.</p>
+                            </div>
+                            <a class="drop-menu__language__change" href="#">Change country/region</a>
+                        </div>
+                    </div>
                     <i class="fas fa-caret-down"></i>
                 </button>
             </div>
@@ -68,6 +98,57 @@
                 <div class="account">
                     <p>Hello, Sign in</p>
                     <p class="account__mini-title">Account & List <i class="fas fa-caret-down"></i> </p> 
+
+                    <div class="drop-menu drop-menu__sigh-in">
+                        <div>
+                            <button class="btn add-to-cart drop-menu drop-menu__sigh-in--btn">Sign in</button>
+                            <p>New customer? <a href="#">Start here.</a></p>
+                        </div>
+                        <div class="drop-menu__sigh-in__container">
+                            <div>
+                                <p class="bold">Your Lists</p>
+                                <ul>
+                                    <li> <a href="#">Create a List </a></li>
+                                    <li> <a href="#">Find a List or Registry </a></li>
+                                    <li> <a href="#">Find a Gift</a></li>
+                                    <li> <a href="#">Save Items from the Web </a></li>
+                                    <li> <a href="#">Wedding Registry </a></li>
+                                    <li> <a href="#">Baby Registry </a></li>
+                                    <li> <a href="#">Friends & Family Gifting </a></li>
+                                    <li> <a href="#">AmazonSmile Charity Lists </a></li>
+                                    <li> <a href="#">Pantry Lists </a></li>
+                                    <li> <a href="#">Your Hearts </a></li>
+                                    <li> <a href="#">Explore Idea Lists </a></li>
+                                    <li> <a href="#">Explore Showroom </a></li>
+                                    <li> <a href="#">Take the Home Style Quiz</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="bold">Your Account</p>
+                                <ul>
+                                    <li> <a href="#">Your Account </a></li>
+                                    <li> <a href="#">Your Orders </a></li>
+                                    <li> <a href="#">Your Recommendations </a></li>
+                                    <li> <a href="#">Your Subscribe & Save Items </a></li>
+                                    <li> <a href="#">Memberships & Subscriptions </a></li>
+                                    <li> <a href="#">Your Service Requests </a></li>
+                                    <li> <a href="#">Your Garage </a></li>
+                                    <li> <a href="#">Your Fanshop </a></li>
+                                    <li> <a href="#">Your Pets </a></li>
+                                    <li> <a href="#">Your Content and Devices </a></li>
+                                    <li> <a href="#">Your Music Library </a></li>
+                                    <li> <a href="#">Your Amazon Drive </a></li>
+                                    <li> <a href="#">Your Prime Video </a></li>
+                                    <li> <a href="#">Your Kindle Unlimited </a></li>
+                                    <li> <a href="#">Your Watchlist </a></li>
+                                    <li> <a href="#">Your Video Purchases & Rentals </a></li>
+                                    <li> <a href="#">Your Android Apps & Devices </a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -242,13 +323,13 @@
                 <section class="info-side__container__price">
                     <aside class="info-side__cost">
                         <div class="info-side__cost-info">
-                            <p>$283.55 </p>
-                            <p>+ $92.43 Shipping & Import Fees Deposit to Israel <a href="#">Details </a> </p>
-                            <p>Arrives: Aug 27 - Sep 3 </p>
+                            <p class="mark">$283.55 </p>
+                            <p>+ $92.43 Shipping & Import Fees Deposit to Israel <a href="#">Details </a> <i class="fas fa-angle-down"></i> </p>
+                            <p>Arrives: <span class="bold">Aug 27 - Sep 3</span></p>
                         </div>
                         <div class="info-side__stock">
-                            <p>In Stock. </p>
-                            <button class="info-side_qty">Qty: 15 <i class="fas fa-angle-down"></i></button>
+                            <p class="green">In Stock. </p>
+                            <button class="grey-btn info-side--btn">Qty: 1 <i class="fas fa-angle-down"></i></button>
                         </div>
                         <div class="info-side__buy-btn">
         
@@ -271,25 +352,25 @@
                             <p class="mark">$279.99</p>
                         </div>
                         <div class="info-side__gift">
-                            <input type="checkbox"> <p>Add gift options</p>
+                            <input type="checkbox"><p>Add gift options</p> 
                         </div>
                         <div class="info-side__deliver">
                             <i class="fas fa-map-marker-alt"></i>
-                            <p>Deliver to Israel</p>
+                            <a href="#">Deliver to Israel</a>
                         </div>
-                        <button>Add to list</button>
+                        <button class="grey-btn">Add to list</button>
                     </aside>
                     <aside class="info-side__more-options">
                         <div class="info-side__new">
-                            <p>New (16) from $283.55</p>
+                            <p>New (16) from <span class="mark">$283.55</span> </p>
                         </div>
 
                         <div class="info-side__share">
-                            <p>Share</p>
-                            <i class="far fa-envelope"></i>
-                            <i class="fab fa-facebook-square"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-pinterest"></i>
+                            <a href="#">Share</a>
+                            <a href=""><i class="far fa-envelope"></i></a>
+                            <a href=""><i class="fab fa-facebook-square icon-blue"></i></a>
+                            <a href="#"><i class="fab fa-twitter icon-light-blue"></i></a>
+                            <a href="#"><i class="fab fa-pinterest icon-red"></i></a>
                         </div>
 
                         <div class="info_side-other-seller">
@@ -361,64 +442,83 @@
                 
                 <figure class="carrousel__img-container">
                     <div>
-                        <img src="/img/amd-1.jpg" alt="">
+                        <img src="/img/carrousel/carrousel-7.jpg" alt="">
+                        <a href="#">
+                            AMD Ryzen 5 3600XT 6-core, 12-threads unlocked desktop processor with Wraith Spire cooler
+                            AMD Ryzen 5 3600XT 6-core, 12-threads unlocked desktop processor with Wraith…
+                        </a>
+                        <div class="star-rate">
+                            <p>★★★★★</p>
+                            <a href="#">13</a>
+                        </div>
+                        <p class="mark">$244.89</p>
+                    </div>
+                    <div>
+                        <img src="/img/carrousel/carrousel-1.jpg" alt="">
+                        <a href="#">
+                            AMD Ryzen 7 2700X Processor with Wraith Prism LED Cooler - YD270XBGAFBOX
+                        </a>
+                        <div class="star-rate">
+                            <p>★★★★★</p>
+                            <a href="#">6,255</a>
+                        </div>
+                        <p class="mark">$227.16</p>
+                    </div>
+                    <div>
+                        <img src="/img/carrousel/carrousel-2.jpg" alt="">
+                        <a href="#">
+                            AMD Ryzen 7 3800XT 8-core, 16-Threads Unlocked Desktop Processor Without Cooler 
+                        </a>
+                        <div class="star-rate">
+                            <p>★★★★★</p>
+                            <a href="#">1</a>
+                        </div>
+                        <p class="mark">$399.00</p>
+                    </div>
+                    <div>
+                        <img src="/img/carrousel/carrousel-3.jpg" alt="">
                         <a href="#">
                             AMD Ryzen 7 3800X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith Prism LED Cooler
                             AMD Ryzen 7 3800X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith…
                         </a>
                         <div class="star-rate">
                             <p>★★★★<span class="half-star">★</span></p>
-                            1,711
+                            <a href="#">1,711</a>
                         </div>
                         <p class="mark">$329.99</p>
                     </div>
                     <div>
-                        <img src="/img/amd-1.jpg" alt="">
+                        <img src="/img/carrousel/carrousel-4.jpg" alt="">
                         <a href="#">
-                            AMD Ryzen 7 3800X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith Prism LED Cooler
-                            AMD Ryzen 7 3800X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith…
+                            Corsair Vengeance RGB PRO 16GB (2x8GB) DDR4 3200MHz C16 LED Desktop Memory... 
                         </a>
                         <div class="star-rate">
-                            <p>★★★★<span class="half-star">★</span></p>
-                            1,711
+                            <p>★★★★★</p>
+                            <a href="#"> 8,350</a>
                         </div>
                         <p class="mark">$329.99</p>
                     </div>
                     <div>
-                        <img src="/img/amd-1.jpg" alt="">
+                        <img src="/img/carrousel/carrousel-5.jpg" alt="">
                         <a href="#">
-                            AMD Ryzen 7 3800X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith Prism LED Cooler
-                            AMD Ryzen 7 3800X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith…
+                            Seagate BarraCuda Pro 12TB Internal Hard Drive Performance HDD – 3.5 Inch SATA 6 Gb/s 7200...
                         </a>
                         <div class="star-rate">
                             <p>★★★★<span class="half-star">★</span></p>
-                            1,711
+                            <a href="#">11,168</a>
                         </div>
-                        <p class="mark">$329.99</p>
+                        <p class="mark">$450.98</p>
                     </div>
                     <div>
-                        <img src="/img/amd-1.jpg" alt="">
+                        <img src="/img/carrousel/carrousel-6.jpg" alt="">
                         <a href="#">
-                            AMD Ryzen 7 3800X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith Prism LED Cooler
-                            AMD Ryzen 7 3800X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith…
+                            Cooler Master MasterBox NR400 Micro-ATX Towe with Front Mesh Ventilation, Minimal...
                         </a>
                         <div class="star-rate">
                             <p>★★★★<span class="half-star">★</span></p>
-                            1,711
+                            <a href="#">890</a>
                         </div>
-                        <p class="mark">$329.99</p>
-                    </div>
-                    <div>
-                        <img src="/img/amd-1.jpg" alt="">
-                        <a href="#">
-                            AMD Ryzen 7 3800X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith Prism LED Cooler
-                            AMD Ryzen 7 3800X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith…
-                        </a>
-                        <div class="star-rate">
-                            <p>★★★★<span class="half-star">★</span></p>
-                            1,711
-                        </div>
-                        <p class="mark">$329.99</p>
+                        <p class="mark">$69.99</p>
                     </div>
                 </figure>
 
