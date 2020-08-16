@@ -18,6 +18,7 @@
 .info-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--grey-border);
 }
 
 .picture-side{
@@ -333,6 +334,10 @@
 
 
 /* Frequently bought together */
+
+.buy-together{
+    border-bottom: 1px solid var(--grey-border);
+}
 
 .buy-together h2,
 .inspired-by h2{
